@@ -1,0 +1,2819 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Protest Riot', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+body::-webkit-scrollbar{
+	width: auto;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color:indianred;
+	border: 2px solid black;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+	background-color: red;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	overflow: auto;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+}
+.wrapper{
+	background-color: gray;
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	width: 98%;
+	margin: 0 auto;
+}
+
+#nav{
+	font-weight: bold;
+	position: fixed;
+	top: 10px;
+	z-index: 1000;
+	background-color: transparent;
+	width: 98%;
+	color: white;
+	text-transform: uppercase;
+	margin: 0px auto;
+	backdrop-filter: blur(3px);
+	box-shadow: 1px 1px 5px whitesmoke;
+	border-radius: 10px;
+}
+#nav .ul{
+	float: right;
+}
+#nav > .ul > ul{
+	list-style: none;
+	position: relative;
+	}
+#nav > .ul > ul >li{
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 18px;
+	margin: 10px 10px;
+	padding: 5px;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+#nav > .ul > ul > li:hover{
+	transform: translateY(-2px);
+}
+#nav > .ul > ul > li:nth-child(1){
+	margin-left: 350px;
+}
+
+#nav > .ul > ul > li:nth-child(4){
+	margin-right: 0px;
+}
+
+#nav > .ul > ul > li > a{
+	color:white;
+	-webkit-text-stroke: 0.5px black;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#nav > .ul > ul > li > a:hover{
+	background-color: black;
+	border: 2px solid black;
+
+}
+
+a{
+	color: white;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav > .logo2 > img{
+	width: 172px;
+	height: 52px;
+	position: absolute;
+	border-radius: 10px;
+	}
+
+#main{
+	background-image: url(images/banner.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 100vh;
+	text-align: center;
+}
+
+#main > h2{
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	top: 250px;
+	animation: main-h2 2s infinite normal;
+	color: black;
+	-webkit-text-stroke: 0.5px white;
+}
+
+#main > a{
+	position: relative;
+	top: 270px;
+	color: black;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.fa.fa-chevron-down{
+	margin: 3px;
+}
+
+@keyframes main-h2{
+	0%{
+		transform: scale(1.35);
+		color: darkblue;
+	}
+	50%{
+		transform: scale(1.15);
+		color: darkmagenta;
+	}
+	100%{
+		transform: scale(1.35);
+		color: darkred;
+	}
+}
+
+#category{
+	position: relative;
+	height: 100vh;
+	background-image: url(images/banner2.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#category > .cards{
+	overflow: auto;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	top: 160px;
+}
+
+#category > .cards::-webkit-scrollbar{
+	width: 5px;
+}
+
+#category > .cards::-webkit-scrollbar-track{
+	background-color: black;
+}
+
+#category > .cards::-webkit-scrollbar-thumb{
+	background-color: blueviolet;
+	border: 2px solid black;
+}
+
+.cards > span:nth-child(1){
+	background-image: url(images/card1.png);
+	background-size: cover;
+	background-position: bottom;
+	margin-left: 5px;
+}
+.cards > span:nth-child(2){
+	background-image: url(images/card2.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards > span:nth-child(3){
+	background-image: url(images/card3.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards > span:nth-child(4){
+	background-image: url(images/card4.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards > span:nth-child(5){
+	background-image: url(images/card5.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards > span:nth-child(6){
+	background-image: url(images/card7.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards > span:nth-child(7){
+	background-image: url(images/card9.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+#category > .cards > span{
+	text-align: center;
+	display: inline-block;
+	margin: 0px 10px;
+	padding: 50px;
+	border-radius: 10px;
+	border: 2px solid white;
+	filter: grayscale(1);
+	backdrop-filter: blur(100%);
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+	margin-bottom: 20px;
+}
+#category > .cards > span > h4{
+	text-align: bottom;
+	width: 150px;
+	height: 40px;
+	padding: 20px;
+	visibility: hidden;
+}
+#category > .cards > span > h4 > a{
+	padding: 10px;
+	background-color: rgba(100, 100, 190, 0.9);
+	border-radius: 10px;
+	text-decoration: none;
+	color: azure;
+}
+#category > .cards > span:hover{
+	border-color: transparent;
+	font-weight: bold;
+	filter: grayscale(0);
+	backdrop-filter: blur(0);
+}
+#category > .cards > span:hover > h4{
+	visibility: visible;
+	transition: 1s all ease;
+}
+section h2{
+	position: relative;
+	top: 70px;
+	font-family: 'Protest Revolution', sans-serif;
+	text-align: center;
+	display: block;
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	width: 10%;
+	border-color: transparent;
+	border-radius: 10px;
+	margin: 0 auto;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+
+#About{
+	position: relative;
+	height: 100vh;
+	background-image: url(images/banner3.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#About > .About{
+	background-color: rgba(100, 100, 190, 0.7);
+	overflow: auto;
+	width: 97%;
+	border-radius: 10px;
+	margin: 20px auto;
+	color: white;
+}
+#About > .About > marquee{
+	white-space: nowrap;
+}
+#About > .About > marquee > img{
+	height: 100px;
+	width: 150px;
+	margin: 0 20px;
+	margin-top: 70px; 
+	display: inline-flex;
+	border-radius: 10px;
+}
+
+#About > .About > p{
+	display: inline-block;
+	margin-top: 0;
+	margin: 10px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.first:first-letter{
+	font-size: 25px;
+	color: blue;
+}
+.last{
+	color: blue;
+	margin-bottom: 20px;
+}
+
+#contact{
+	position: relative;
+	height: 100vh;
+	background-image: url(images/banner4.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#contact > .contact{
+	position: relative;
+	top: 85px;
+	text-align: center;
+	overflow: auto;
+	width: 40%;
+	border-radius: 10px;
+	margin: 10px auto;
+	color: white;
+	box-shadow: 0px 0px 10px black;
+	padding: 20px;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+}
+
+#contact > .contact > form > .input {
+	background-color: black;
+	color: white;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 5px auto;
+	padding: 10px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+
+#contact > .contact > form > textarea{
+	background-color: black;
+	color: white;
+	width: 400px;
+	height: 100px;
+	padding: 10px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+#contact > .contact > form > .btn{
+	display: flex;
+	margin: 0px auto;
+	padding: 10px 20px;
+	color: white;
+	background-color: rgb(196, 119, 26);
+	border: 1px solid rgb(196, 119, 26);
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	
+}
+
+#contact > .contact > form >.btn:hover{
+	background-color: green;
+	border-color: white;
+	box-shadow: 0px 0px 10px white;
+}
+
+.footer{
+	width: 100%;
+	background-color: black;
+	backdrop-filter: blur(10px);
+	height: 60vh;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer > .footer-in{
+	display: inline-flex;
+	column-gap: 200px;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.footer > .footer-out{
+	width: 100%;
+	border-top: 0.1px solid white;
+}
+
+.footer > .footer-out > p{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.footer > .footer-in > .footer-logo > img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px white;
+	animation: footer-logo 15s infinite ease-in-out;
+}
+
+@keyframes footer-logo {
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: 360deg;
+	}
+}
+.footer > .footer-in > .footer-tags > h3{
+	color: white;
+	text-decoration: underline;
+	text-align: justify;
+}
+
+.footer > .footer-in > .footer-tags > a{
+	display: block;
+	font: 15px;
+	margin: 10px;
+	text-align: justify;
+
+}
+
+.footer > .footer-in > .footer-links > a{
+	display: block;
+	margin: 10px;
+}
+.footer > .footer-in > .footer-links > a > i{
+	font-size: 20px;
+}
+
+/* .footer > .footer-in > .footer-links > a > .fa.fa-arrow-circle-o-up{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 25px;
+} */
+
+
+
+/* Media Queries for Responsive Design */
+/* Large devices (desktops, 992px and up) */
+/* @media (max-width: 1200px) {
+    #nav > .ul > ul > li {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+
+    .logo2 > img {
+        width: 130px;
+    }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+
+/* @media (max-width: 992px) {
+	#nav {
+		box-shadow: 0 0 3px white;
+	}
+	#nav > .ul > ul > li {
+		margin: 5px 5px;
+		padding: 10px;
+	}
+	#nav > .ul > ul > li:nth-child(1){
+		margin-left: 250px;
+	}
+
+    .logo2 > img {
+        width: 150px;
+    }
+
+    #main > h2 {
+        font-size: 25px;
+        width: 80%;
+    }
+
+	#main > a{
+		font-size: 15px;
+		top: 260px;
+	}
+
+	@keyframes main-h2{
+		0%{
+			transform: scale(1.15);
+			color: darkblue;
+		}
+		50%{
+			transform: scale(1.05);
+			color: darkmagenta;
+		}
+		100%{
+			transform: scale(1.15);
+			color: darkred;
+		}
+	}
+
+	#category > .cards{
+		top: 200px;
+	}
+
+	#category > .cards > span{
+		margin: 0 10px;
+		padding: 40px;
+		
+	}
+
+	#category > .cards > span > h4{
+		width: 150px;
+		height: 50px;
+		padding: 15px;
+	}
+
+	#category > .cards > span > h4 > a{
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	section > h2{
+		top: 65px;
+		padding: 10px;
+		width: 20%;
+		font-size: 20px;
+	}
+
+	#About > .About{
+		margin: 10px auto;
+	}
+
+	#About > .About > marquee > img{
+		height: 100px;
+		width: 100px;
+		margin: 0 8px;
+		margin-top: 80px;
+	}
+
+	#About > .About > p{
+		margin: 8px;
+		margin-left: 20px;
+		font-size: 15px;
+	}
+
+	#contact > .contact{
+		top: 110px;
+		margin: 0px auto;
+		padding: 15px;
+		width: 450px;
+	}
+
+	#contact > .contact > form > .input {
+		width: 350px;
+		margin: 5px auto;
+		padding: 10px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > textarea{
+		width: 350px;
+		height: 180px;
+		margin: 5px auto;
+		padding: 10px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > .btn{
+		padding: 10px 25px;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+
+    .footer > .footer-in {
+        display: flex;
+		column-gap: 40px;
+    }
+
+	.footer > .footer-out > p{
+		font-size: 15px;
+	}	
+
+    .footer > .footer-in > .footer-logo > img {
+        height: 200px;
+        width: 200px;
+    }
+	.footer > .footer-in > .footer-tags > h3{
+		font-size: 25px;
+	}
+
+	.footer > .footer-in > .footer-tags > a{
+		font-size: 20px;
+		margin: 10px;
+	}
+
+	.footer > .footer-in > .footer-links > a{
+		margin: 20px;
+	}
+
+	.footer > .footer-in > .footer-links > a > i{
+		font-size: 20px;
+	}
+
+	.footer > .footer-in > .footer-links > a > .fa.fa-arrow-circle-o-up{
+		font-size: 25px;
+		bottom: 15px;
+		right: 15px;
+	}
+
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+	#nav {
+		box-shadow: 0 0 3px white;
+	}
+	#nav > .ul > ul > li {
+		margin: 5px 5px;
+		padding: 10px;
+	}
+	#nav > .ul > ul > li:nth-child(1){
+		margin-left: 250px;
+	}
+
+    .logo2 > img {
+        width: 150px;
+    }
+
+    #main > h2 {
+        font-size: 25px;
+        width: 80%;
+    }
+
+	#main > a{
+		font-size: 15px;
+		top: 260px;
+	}
+
+	@keyframes main-h2{
+		0%{
+			transform: scale(1.15);
+			color: darkblue;
+		}
+		50%{
+			transform: scale(1.05);
+			color: darkmagenta;
+		}
+		100%{
+			transform: scale(1.15);
+			color: darkred;
+		}
+	}
+
+	#category > .cards{
+		top: 200px;
+	}
+
+	#category > .cards > span{
+		margin: 0 10px;
+		padding: 40px;
+		
+	}
+
+	#category > .cards > span > h4{
+		width: 150px;
+		height: 50px;
+		padding: 15px;
+	}
+
+	#category > .cards > span > h4 > a{
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	section > h2{
+		top: 65px;
+		padding: 10px;
+		width: 20%;
+		font-size: 20px;
+	}
+
+	#About > .About{
+		margin: 10px auto;
+	}
+
+	#About > .About > marquee > img{
+		height: 100px;
+		width: 100px;
+		margin: 0 8px;
+		margin-top: 80px;
+	}
+
+	#About > .About > p{
+		margin: 8px;
+		margin-left: 20px;
+		font-size: 15px;
+	}
+
+	#contact > .contact{
+		top: 110px;
+		margin: 0px auto;
+		padding: 15px;
+		width: 450px;
+	}
+
+	#contact > .contact > form > .input {
+		width: 350px;
+		margin: 5px auto;
+		padding: 10px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > textarea{
+		width: 350px;
+		height: 180px;
+		margin: 5px auto;
+		padding: 10px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > .btn{
+		padding: 10px 25px;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+
+    .footer > .footer-in {
+        display: flex;
+		column-gap: 40px;
+    }
+
+	.footer > .footer-out > p{
+		font-size: 15px;
+	}	
+
+    .footer > .footer-in > .footer-logo > img {
+        height: 200px;
+        width: 200px;
+    }
+	.footer > .footer-in > .footer-tags > h3{
+		font-size: 25px;
+	}
+
+	.footer > .footer-in > .footer-tags > a{
+		font-size: 20px;
+		margin: 10px;
+	}
+
+	.footer > .footer-in > .footer-links > a{
+		margin: 20px;
+	}
+
+	.footer > .footer-in > .footer-links > a > i{
+		font-size: 20px;
+	}
+
+	.footer > .footer-in > .footer-links > a > .fa.fa-arrow-circle-o-up{
+		font-size: 25px;
+		bottom: 15px;
+		right: 15px;
+	}
+    
+} 
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 576px) {
+	#nav {
+		box-shadow: 0 0 0 transparent;
+	}
+	#nav > .ul {
+		display: none;
+	}
+
+    .logo2 > img {
+        width: 150px;
+    }
+
+    #main > h2 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+	#main > a{
+		font-size: 15px;
+		top: 260px;
+	}
+
+	@keyframes main-h2{
+		0%{
+			color: darkblue;
+		}
+		50%{
+			color: darkmagenta;
+		}
+		100%{
+			color: darkred;
+		}
+	}
+
+	#category > .cards{
+		top: 170px;
+	}
+
+	#category > .cards > span{
+		margin: 0 5px;
+		padding: 30px;
+		
+	}
+
+	#category > .cards > span > h4{
+		width: 100px;
+		height: 20px;
+		padding: 12px;
+	}
+
+	#category > .cards > span > h4 > a{
+		font-size: 12px;
+		padding: 5px;
+	}
+
+	section > h2{
+		top: 65px;
+		padding: 5px;
+		width: 20%;
+		font-size: 12px;
+	}
+
+	#About > .About{
+		margin: 5px auto;
+	}
+
+	#About > .About > marquee > img{
+		height: 50px;
+		width: 50px;
+		margin: 0 2px;
+		margin-top: 70px;
+	}
+
+	#About > .About > p{
+		margin: 5px;
+		margin-left: 20px;
+		font-size: 10px;
+	}
+
+	#contact > .contact{
+		top: 110px;
+		margin: 0px auto;
+		padding: 15px;
+		width: 220px;
+	}
+
+	#contact > .contact > form > .input {
+		width: 200px;
+		margin: 3px auto;
+		padding: 5px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > textarea{
+		width: 200px;
+		height: 80px;
+		margin: 3px auto;
+		padding: 5px;
+		border: 1px solid white;
+	}
+
+	#contact > .contact > form > .btn{
+		padding: 5px 20px;
+		border-radius: 10px;
+		font-size: 10px;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+    .footer > .footer-in {
+        display: flex;
+		column-gap: 20px;
+    }
+
+	.footer > .footer-out > p{
+		font-size: 10px;
+	}	
+
+    .footer > .footer-in > .footer-logo > img {
+        height: 100px;
+        width: 100px;
+    }
+	.footer > .footer-in > .footer-tags > h3{
+		font-size: 12px;
+	}
+
+	.footer > .footer-in > .footer-tags > a{
+		font-size: 10px;
+		margin: 5px;
+	}
+
+	.footer > .footer-in > .footer-links > a{
+		margin: 5px;
+	}
+
+	.footer > .footer-in > .footer-links > a > i{
+		font-size: 10px;
+	}
+
+	.footer > .footer-in > .footer-links > a > .fa.fa-arrow-circle-o-up{
+		font-size: 15px;
+		bottom: 5px;
+		right: 5px;
+	}
+
+} 
+
+
+
+#class1{
+	position: relative;
+	background-image: url(images/banner5.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#class1 > h2{
+	font-family: 'Courier New', Courier, monospace;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 85px;
+	font-weight: bold;
+	animation: image-h2 1s normal infinite;
+}
+
+@keyframes image-h2{
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+#class1 > .logo2{
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#class1 > .logo2 > img{
+	width: 172px;
+	height: 52px;
+	position: relative;
+	border-radius: 10px;
+	}
+
+#class1 > .cards1{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards1 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards1 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards1 > span > h4 >p{
+	text-align: justify;
+}
+
+#class1 > .cards1 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+#class1 > button{
+	position: relative;
+	float: right;
+	padding: 5px;
+	right: 70px;
+	bottom: 40px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: black;
+	color: black;
+}
+
+@media (max-width: 320px){
+
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards1{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards1{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards1 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+
+#class1 > .cards2{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards2 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards2 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards2 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+@media (max-width: 320px){
+
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards2{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards2{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards2{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards2{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards2{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards2{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards2 > span{
+		margin: 0 auto;
+	}
+
+}
+
+#class1 > .cards3{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards3 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards3 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards3 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+
+
+
+#class1 > .cards3{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards3 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards3 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards3 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+@media (max-width: 320px){
+
+	#class1 > h2{
+		font-size: 20px;
+	}
+	#class1 > .cards3{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards3{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards3{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards3{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards3{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards3{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards3 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+
+#class1 > .cards4{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards4 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards4 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards4 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+@media (max-width: 320px){
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards4{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards4{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards4{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards4{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards4{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards4{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards4 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+#class1 > .cards5{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards5 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards5 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards5 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+@media (max-width: 320px){
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards5{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards5{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards5{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards5{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards5{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards5{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards5 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+#class1 > .cards6{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards6 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards6 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards6 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+@media (max-width: 320px){
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards6{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards6{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards6{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards6{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards6{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards6{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards6 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+#class1 > .cards7{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 150px;
+	overflow: auto;
+}
+
+#class1 > .cards7 > span{
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+
+#class1 > .cards7 > span > h4{
+	margin-top: 212px;
+	padding: 10px 0;
+	text-align: center;
+	width: 250px;
+	height: 230px;
+	background-color: rgba(100, 100, 190, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	transition: 1s all ease-in-out;
+}
+
+#class1 > .cards7 > span > h4 >p{
+	text-align: justify;
+}
+
+#class1 > .cards7 > span > h4:hover{
+	margin-top: 0;
+	border-radius: 10px;
+}
+
+
+@media (max-width: 320px){
+	#class1 > h2{
+		font-size: 20px;
+	}
+
+	#class1 > .cards7{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 20px;	
+	}
+
+}
+
+@media only screen and (max-width: 376px) and (min-width: 321px){
+
+	#class1 > .cards7{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 30px;	
+	}
+
+}
+
+@media only screen and (max-width: 426px) and (min-width: 377px){
+
+	#class1 > .cards7{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 40px;	
+	}
+}
+
+@media only screen and (max-width: 596px) and (min-width: 427px){
+	#class1 > .cards7{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 50px;	
+	}
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 597px){
+
+	#class1 > .cards7{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+	#class1 > button{
+		right: 60px;	
+	}
+
+}
+
+
+@media only screen and (max-width: 925px) and (min-width: 770px){
+
+	#class1 > .cards7{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	#class1 > .cards7 > span{
+		margin: 0 auto;
+	}
+
+}
+
+
+
+#class1 > a{
+	position: relative;
+	left: 88.25%;
+	bottom: 20px;
+	padding: 5px;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+}
+
+.cards1 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards1 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards1 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards1 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards1 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards1 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards1 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards2{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards2 span:nth-child(1){
+	background-image: url(images/cards21.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(2){
+	background-image: url(images/cards22.webp);
+	background-size: cover;
+	background-position: top;
+}
+.cards2 span:nth-child(3){
+	background-image: url(images/cards23.webp);
+	background-size: cover;
+	background-position: top ;
+}
+.cards2 span:nth-child(4){
+	background-image: url(images/cards24.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(5){
+	background-image: url(images/cards25.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(6){
+	background-image: url(images/cards26.webp);
+	background-size: cover;
+	background-position: top;
+}
+.cards2 span:nth-child(7){
+	background-image: url(images/cards27.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(8){
+	background-image: url(images/cards28.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(9){
+	background-image: url(images/cards29.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(10){
+	background-image: url(images/cards210.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(11){
+	background-image: url(images/cards211.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(12){
+	background-image: url(images/cards212.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(13){
+	background-image: url(images/cards213.webp);
+	background-size: cover;
+	background-position: top ;
+}
+.cards2 span:nth-child(14){
+	background-image: url(images/cards214.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(15){
+	background-image: url(images/cards215.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(16){
+	background-image: url(images/cards216.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards2 span:nth-child(17){
+	background-image: url(images/cards217.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(18){
+	background-image: url(images/cards218.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(19){
+	background-image: url(images/cards219.webp);
+	background-size: cover;
+	background-position: center;
+}
+.cards2 span:nth-child(20){
+	background-image: url(images/cards220.webp);
+	background-size: cover;
+	background-position: top;
+}
+.cards3{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards3 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards3 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards3 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards3 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards3 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards3 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards3 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards4{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards4 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards4 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards4 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards4 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards4 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards4 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards4 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards5{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards5 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards5 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards5 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards5 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards5 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards5 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards5 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards6{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards6 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards6 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards6 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards6 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards6 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards6 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards6 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards7{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	display: grid;
+	gap: 40px;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 30px;
+}
+.cards7 span:nth-child(1){
+	background-image: url(images/cards11.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(2){
+	background-image: url(images/cards12.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards7 span:nth-child(3){
+	background-image: url(images/cards13.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards7 span:nth-child(4){
+	background-image: url(images/cards14.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(5){
+	background-image: url(images/cards15.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(6){
+	background-image: url(images/cards16.png);
+	background-size: cover;
+	background-position: top;
+}
+.cards7 span:nth-child(7){
+	background-image: url(images/cards17.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(8){
+	background-image: url(images/cards18.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(9){
+	background-image: url(images/cards19.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(10){
+	background-image: url(images/cards110.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(11){
+	background-image: url(images/cards111.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(12){
+	background-image: url(images/cards112.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(13){
+	background-image: url(images/cards113.png);
+	background-size: cover;
+	background-position: top ;
+}
+.cards7 span:nth-child(14){
+	background-image: url(images/cards114.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(15){
+	background-image: url(images/cards115.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(16){
+	background-image: url(images/cards116.png);
+	background-size: cover;
+	background-position: bottom;
+}
+.cards7 span:nth-child(17){
+	background-image: url(images/cards117.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(18){
+	background-image: url(images/cards118.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(19){
+	background-image: url(images/cards119.png);
+	background-size: cover;
+	background-position: center;
+}
+.cards7 span:nth-child(20){
+	background-image: url(images/cards120.png);
+	background-size: cover;
+	background-position: top;
+}
+
+.s_container{
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(157, 100, 190, 0.432);
+}
+
+.s_container > .story{
+	position: relative;
+	background-color: rgba(157, 100, 190, 0.432);
+	padding: 15px;
+}
+
+
+
+.s_container > .story > .story_header{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+.s_container > .story > .story_content > p{
+	padding: 5px;
+	background-color: rgba(100, 190, 142, 0.5);
+	border-left: 5px solid black;
+	border-radius: 5px;
+}
+
+.nxt > button{
+	padding: 5px;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+}
+
+/* .story{
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+	padding: 10px 20px 20px 20px;
+	border: 2px solid grey;
+	background-image: url(images/banner4.avif)
+}
+.story img{
+	border: 1px solid white;
+	margin: 10px;
+	border-radius: 10px;
+	width: 250px;
+	height: 250px;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-property: all;
+}
+.story img:hover{
+	transform: scale(1.28);
+	border-color: transparent;
+}
+.story1{
+	border-radius: 10px;
+	color: white;
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px;
+	border: 2px solid grey;
+	background-color: rgba(32, 32, 32, 0.9);
+}
+.story1 p{
+	margin: 20px;
+	font-family: Ariel;
+	font-size: 20px;
+}
+.nxt{
+	text-align: center;
+	color: white;
+	margin: 10px auto;
+	width: 100px;
+	height: 30px;
+	background-color: rgba(32, 32, 32, 0.9);
+	border: 2px solid white;
+	border-radius: 25px;
+	transition-duration: 5s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.nxt:hover{
+	border-radius: 5px 50px 50px 5px;
+	background-image: linear-gradient(to right, blue, purple,green);
+}
+.nxt button {
+	margin-top: 8px;
+	border: none;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+} */

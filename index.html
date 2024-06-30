@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/66bd350e60.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="x-icon" href="images/icon2.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MagicalDreamSpace</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<div class="header">
+				<section id="nav">
+					<div class="logo2"><img src="/images/logo2.png" alt="MagicalDreamSpace"></div>
+					<div class="ul">
+						<ul>
+							<li><a href="#main">Home</a></li>
+							<li><a href="#category">Categories</a></li>
+							<li><a href="#About">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+				<div id="main">
+					<h2>Explore your favorite category of stories</h2>
+					<a href="#category">scroll<i class="fa fa-chevron-down" aria-hidden="true"></i>down</a>
+				</div>
+			<section id="category">
+				<h2>-Categories-</h2>
+				<div class="cards">
+					<span><h4><a href="fantasy.html">Fantasy</a></h4></span>
+					<span><h4><a href="Adventure.html">Adventure</a></h4></span>
+					<span><h4><a href="FairyTales.html">Fairy Tales</a></h4></span>
+					<span><h4><a href="Sci-Fi.html">Sci-Fi</a></h4></span>
+					<span><h4><a href="Mystery.html">Mystery</a></h4></span>
+					<span><h4><a href="Humor.html">Humor</a></h4></span>
+					<span><h4><a href="Horror.html">Horror</a></h4></span>
+				</div>
+			</section>
+			<section id="About">
+				<h2>-About us-</h2>
+				<div class="About">
+					<marquee behavior="alternate"><img src="images/banner.jpg"><img src="images/banner2.png"><img src="images/banner3.png"><img src="images/banner4.png"></marquee>
+					
+					<p class="first">Welcome to Magical Dream Space, where imagination knows no bounds and storytelling comes to life!</p><p>At Magical Dream Space, we believe in the power of storytelling to inspire, entertain, and ignite the imagination. Our mission is to create a magical space where readers of all ages can embark on enchanting adventures, explore fantastical worlds, and get lost in the wonder of storytelling.</p><p>Our collection of stories spans a wide range of genres, from thrilling adventures and whimsical fairy tales to gripping mysteries and heartwarming romances. Each story is carefully crafted to captivate readers and transport them to new and exciting realms, where anything is possible.</p><p>Whether you're a lifelong lover of stories or just discovering the joy of reading, Magical Dream Space has something for everyone. Join us on a journey through the pages of imagination, where the only limit is your creativity.</p><p>Thank you for visiting Magical Dream Space. We hope you enjoy your stay and find inspiration in the stories we share.</p><br><p class="last">Happy reading!</p>
+				</div>
+			</section>
+			<section id="contact">
+				<h2>-Contact us-</h2>
+				<div class="contact">
+					
+					<form id="contact-form">
+						<input class="input" type="text" name="name" required id="name" placeholder="Your Name">
+						<input class="input" type="email" name="email" required id="email" placeholder="Your Email">
+						<textarea rows="10" cols="50"  name="message" required id="message" placeholder="Your Message"></textarea>
+						<button type='submit' class="btn" id="btn" >Send Message</button>
+					</form>
+				</div>
+			</section>
+
+
+			<script src="https://smtpjs.com/v3/smtp.js">
+			</script>
+			
+			<script>
+				document.getElementById('contact-form').addEventListener('submit',function(event){
+				event.preventDefault();
+				
+					var name = document.getElementById("name").value;
+				 	var email = document.getElementById("email").value;
+				 	var message = document.getElementById("message").value;
+					var body = "Name: "+name+"<br/>Email: "+email+"<br/>Message: "+message;
+					if(!name || !email || !message)
+					{
+						alert("please Ensure you input a value in all the required fields!");
+						return;
+					}
+
+						Email.send({
+						SecuredToken : "bbc91f36-7bcd-4073-8134-550db84770ac",
+						Host : "smtp.elasticemail.com",
+						Username : "saikiranatchi873@gmail.com",
+						Password : "E563A0AF375196BAE7B8302F1AF9D8141A23",
+						To : "saikiranatchi873@gmail.com",
+						From : "saikiranatchi873@gmail.com",
+						Subject : "New Entry from Story website",
+						Body : body,
+						}).then(
+							message => alert("Message sent Successfully.!")
+						).catch(
+							error => alert("Error occurred while sending the message"+error)
+						);
+						
+					});
+			</script>
+
+
+			<section class="footer">
+				<div class="footer-in">
+					<div class="footer-logo">
+						<img src="images/logo1.png">
+					</div>
+					<div class="footer-tags">
+						<h3>Dive into more story Books</h3>
+						<a href="https://www.amazon.in/b?node=1637083031&pf_rd_m=A1VBAL9TL5WCBF&storeType=ebooks&pageType=STOREFRONT&pf_rd_p=&pf_rd_r=0WFMTP1HA4PTAH5VKWGZ&pf_rd_s=merchandised-slot-29&pf_rd_t=&ref_=dbs_f_r_grid_s29_10&pf_rd_i=">Crime, Thriller & Mystery</a>
+						<a href="https://www.amazon.in/b?node=1637250031&pf_rd_m=A1VBAL9TL5WCBF&storeType=ebooks&pageType=STOREFRONT&pf_rd_p=&pf_rd_r=0WFMTP1HA4PTAH5VKWGZ&pf_rd_s=merchandised-slot-29&pf_rd_t=&ref_=dbs_f_r_grid_s29_30&pf_rd_i=">Travel & Tourism</a>
+						<a href="https://www.amazon.in/b?node=1637179031&pf_rd_m=A1VBAL9TL5WCBF&storeType=ebooks&pageType=STOREFRONT&pf_rd_p=&pf_rd_r=0WFMTP1HA4PTAH5VKWGZ&pf_rd_s=merchandised-slot-29&pf_rd_t=&ref_=dbs_f_r_grid_s29_28&pf_rd_i=">Sports & Outdoors</a>
+						<a href="https://www.amazon.in/b?node=1637005031&pf_rd_m=A1VBAL9TL5WCBF&storeType=ebooks&pageType=STOREFRONT&pf_rd_p=&pf_rd_r=0WFMTP1HA4PTAH5VKWGZ&pf_rd_s=merchandised-slot-29&pf_rd_t=&ref_=dbs_f_r_grid_s29_2&pf_rd_i=">Arts, Film & Photography</a>
+					</div>
+					<div class="footer-links">
+						<a href="https://www.instagram.com/sai_kiran_atchi?igsh=MXZ2bGJ4M3p2YXNxbg=="><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/saikiran-atchi-727965281/"><i class="fa-brands fa-linkedin-in"></i></a>
+						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href=mailto:"saikiranatchi873@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						<!-- <a href="#main"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a> -->
+					</div>
+				</div>
+				<div class="footer-out">
+					<p>Designed & developed by SAIKIRAN.ATCHI 	&copy; 2024 MagicalDreamSpace. All Rights Reserved.</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
